@@ -67,7 +67,7 @@ stg init
 
 stg series
 
-stg import --mail ../meta-mender-patches/2019-09-10-thud-as-warrior/0001-use-systemd-as-cgroup-manager-for-docker-While-it-s-.patch
+stg import --mail ../meta-mender-patches/2019-09-10-thud-as-warrior/0001-thud-as-warrior.patch
 
 import all patches
 
