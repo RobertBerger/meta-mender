@@ -19,7 +19,7 @@ git push -u origin master
 3) use my repo
 
 mv meta-mender meta-mender.ori
-git clone git://github.com/mendersoftware/meta-mender.git
+git clone git://github.com/RobertBerger/meta-mender.git
 
 4) add upstream
 
