@@ -41,10 +41,11 @@ git fetch git://github.com/mendersoftware/meta-mender thud:refs/remotes/origin/t
 git co master
 >> git remote -v
 
-official-upstream       git://github.com/kraj/meta-clang (fetch)
-official-upstream       git://github.com/kraj/meta-clang (push)
-origin  git@github.com:RobertBerger/meta-clang.git (fetch)
-origin  git@github.com:RobertBerger/meta-clang.git (push)
+official-upstream       git://github.com/mendersoftware/meta-mender (fetch)
+official-upstream       git://github.com/mendersoftware/meta-mender (push)
+origin  git://github.com/RobertBerger/meta-mender.git (fetch)
+origin  git://github.com/RobertBerger/meta-mender.git (push)
+
 
 >> git fetch official-upstream
 ---
