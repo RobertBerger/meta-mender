@@ -18,14 +18,14 @@ git push -u origin master
 
 3) use my repo
 
-mv meta-clang meta-clang.ori
-git clone git@github.com:RobertBerger/meta-clang.git
+mv meta-mender meta-mender.ori
+git clone git://github.com/mendersoftware/meta-mender.git
 
 4) add upstream
 
-cd meta-clang
+cd meta-mender
 
-git remote add official-upstream git://github.com/kraj/meta-clang
+git remote add official-upstream git://github.com/mendersoftware/meta-mender
 
 git fetch official-upstream
 
@@ -35,7 +35,7 @@ git branch -a
 
 syntax: git fetch url-to-repo branchname:refs/remotes/origin/branchname
 
-git fetch git://github.com/kraj/meta-clang warrior:refs/remotes/origin/warrior
+git fetch git://github.com/mendersoftware/meta-mender thud:refs/remotes/origin/thud
 
 6) Update from upstream:
 git co master
@@ -51,22 +51,22 @@ origin  git@github.com:RobertBerger/meta-clang.git (push)
 
 7) My own branch:
 git co master
-git co official-upstream/warrior
-git checkout -b 2019-09-10-warrior
+git co official-upstream/thud
+git checkout -b 2019-09-10-thud-as-warrior
 git co master
 ./my-scripts/push-all-to-github.sh
 
 8) apply patches
 
-cd meta-clang
+cd meta-mender
 
-git co 2019-09-10-warrior 
+git co 2019-09-10-thud-as-warrior
 
 stg init
 
 stg series
 
-stg import --mail ../meta-clang-patches/2019-09-10-warrior/0001-use-systemd-as-cgroup-manager-for-docker-While-it-s-.patch
+stg import --mail ../meta-mender-patches/2019-09-10-thud-as-warrior/0001-use-systemd-as-cgroup-manager-for-docker-While-it-s-.patch
 
 import all patches
 
